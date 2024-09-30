@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 offset-md-3 border rounded p-4 mt-2 shadow">
+      <h2 class="text-center m-4">View Task</h2>
+
+      <p><strong>Assigned To:</strong> {{ task.assignedTo }}</p>
+      <p><strong>Status:</strong> {{ task.status }}</p>
+      <p><strong>Priority:</strong> {{ task.priority }}</p>
+      <p><strong>Due Date:</strong> {{ task.dueDate | date }}</p>
+      <p><strong>Comments:</strong> {{ task.comments }}</p>
+
+      <a routerLink="/" class="btn btn-outline-primary mt-3">Back to Task List</a>
+    </div>
+  </div>
+</div>
